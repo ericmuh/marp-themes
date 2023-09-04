@@ -1,4 +1,4 @@
-/* @theme dracula_a4 */
+/* @theme dracula */
 @import 'default';
 /*!
  * Marp Dracula theme.
@@ -250,11 +250,6 @@ table td {
 section {
   width: 2180px;
   height: 3508px;
-  font-size: 35px;
-  font-family: "IBM Plex Sans";
-  line-height: 1.35;
-  letter-spacing: 1.25px;
-  padding: 70px;
   color: var(--dracula-foreground);
   background-color: var(--dracula-background);
 }
@@ -302,17 +297,7 @@ section table tbody > tr:nth-child(even) th {
 }
 
 header,
-footer,
-section::after {
-  box-sizing: border-box;
-  font-size: 66%;
-  height: 70px;
-  line-height: 50px;
-  overflow: hidden;
-  padding: 10px 25px;
-  position: absolute;
-  color: var(--dracula-comment);
-}
+
 
 header {
   left: 0;
