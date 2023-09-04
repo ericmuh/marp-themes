@@ -29,7 +29,6 @@
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: 0.5em;
   background: var(--dracula-background);
 }
 
@@ -118,14 +117,17 @@
 svg[data-marp-fitting=svg] {
   max-height: 580px;
 }
-
+section {
+  /* A4 document size */
+  width: 210mm;
+  height: 297mm;
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  margin: 0.5em 0 0 0;
   color: var(--dracula-pink);
 }
 h1 strong,
@@ -137,48 +139,19 @@ h6 strong {
   font-weight: inherit;
 }
 
-h1 {
-  font-size: 1.8em;
-}
 
-h2 {
-  font-size: 1.5em;
-}
 
-h3 {
-  font-size: 1.3em;
-}
 
-h4 {
-  font-size: 1.1em;
-}
 
-h5 {
-  font-size: 1em;
-}
-
-h6 {
-  font-size: 0.9em;
-}
-
-p,
-blockquote {
-  margin: 1em 0 0 0;
-}
 
 ul > li,
 ol > li {
-  margin: 0.3em 0 0 0;
   color:  var(--dracula-cyan);
 }
-ul > li > p,
-ol > li > p {
-  margin: 0.6em 0 0 0;
-}
+
 
 code {
   display: inline-block;
-  font-family: "IBM Plex Mono", monospace;
   font-size: 0.8em;
   letter-spacing: 0;
   margin: -0.1em 0.15em;
@@ -189,44 +162,26 @@ code {
 
 pre {
   display: block;
-  margin: 1em 0 0 0;
-  min-height: 1em;
   overflow: visible;
 }
 pre code {
   box-sizing: border-box;
-  margin: 0;
   min-width: 100%;
-  padding: 0.5em;
-  font-size: 0.7em;
-}
-pre code svg[data-marp-fitting=svg] {
-  max-height: calc(580px - 1em);
 }
 
+
 blockquote {
-  margin: 1em 0 0 0;
-  padding: 0 1em;
   position: relative;
   color: var(--dracula-orange);
 }
 blockquote::after, blockquote::before {
   content: "“";
   display: block;
-  font-family: "Times New Roman", serif;
   font-weight: bold;
-  position: absolute;
   color: var(--dracula-green);
 }
-blockquote::before {
-  top: 0;
-  left: 0;
-}
-blockquote::after {
-  right: 0;
-  bottom: 0;
-  transform: rotate(180deg);
-}
+
+
 blockquote > *:first-child {
   margin-top: 0;
 }
@@ -238,20 +193,19 @@ mark {
 table {
   border-spacing: 0;
   border-collapse: collapse;
-  margin: 1em 0 0 0;
+
 }
 table th,
 table td {
-  padding: 0.2em 0.4em;
+
   border-width: 1px;
   border-style: solid;
 }
 
 section {
-
-
-
-
+  width: 2180px;
+  height: 3508px;
+ 
   color: var(--dracula-foreground);
   background-color: var(--dracula-background);
 }
@@ -299,7 +253,17 @@ section table tbody > tr:nth-child(even) th {
 }
 
 header,
-
+footer,
+section::after {
+  box-sizing: border-box;
+  font-size: 66%;
+  height: 70px;
+  line-height: 50px;
+  overflow: hidden;
+  padding: 10px 25px;
+  position: absolute;
+  color: var(--dracula-comment);
+}
 
 header {
   left: 0;
