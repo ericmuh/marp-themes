@@ -138,14 +138,7 @@ h5,
 h6 {
   color: var(--dracula-pink);
 }
-h1 strong,
-h2 strong,
-h3 strong,
-h4 strong,
-h5 strong,
-h6 strong {
-  font-weight: inherit;
-}
+
 
 
 
@@ -162,13 +155,12 @@ ol > li {
 
 
 blockquote {
-  position: relative;
+ 
   color: var(--dracula-orange);
 }
 blockquote::after, blockquote::before {
   content: "“";
-  
-  font-weight: bold;
+
   color: var(--dracula-green);
 }
 
@@ -216,7 +208,6 @@ section h6 strong {
   color: var(--dracula-current-line);
 }
 section pre > code {
-    font-size: 20px;
   background: var(--dracula-current-line);
 }
 section header,
