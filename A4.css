@@ -1,7 +1,7 @@
 /* @theme A4 */
 
 @import 'default';
-
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap');
 section {
   /* A4 document size */
   width: 210mm;
@@ -31,5 +31,5 @@ li {
 pre, pre code, code{
     font-size: 18px;
     padding: 2px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Fira Code', monospace;
 }
