@@ -28,7 +28,8 @@ li {
   font-size: 20px;
 }
 
-code{
-    font-size: 20px;
+pre, pre code, code{
+    font-size: 18px;
+    padding: 2px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
