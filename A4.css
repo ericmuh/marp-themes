@@ -1,13 +1,6 @@
 /* @theme A4 */
 @import 'default';
-/*!
 
- *
- * @auto-scaling true
- * @size 4:3 960px 720px
- * @size 16:9 1280px 720px
- */
- 
 
 :root {
   --dracula-background: #282a36;
@@ -174,7 +167,7 @@ blockquote {
 }
 blockquote::after, blockquote::before {
   content: "“";
-  display: block;
+  
   font-weight: bold;
   color: var(--dracula-green);
 }
